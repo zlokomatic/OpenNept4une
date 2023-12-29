@@ -140,7 +140,6 @@ class NavigationController:
         else:
             await self.views['Print'].print_status()
 
-        await self.page(127)
         while True:
             await self.update_printer_status()
             command = self.display.get_command()
